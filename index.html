@@ -1,0 +1,248 @@
+
+<!DOCTYPE html> 
+<html lang="id">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>FJ STORE</title>
+
+<style>
+    body {
+        margin: 0;
+        font-family: Arial, sans-serif;
+        background: url("latarbelakang.jpg") center/cover no-repeat fixed;
+        backdrop-filter: blur(2px);
+    }
+
+    #loader {
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100vh;
+        background: rgba(0,0,0,0.92);
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        z-index: 99999;
+    }
+
+    #loader-text {
+        font-size: 34px;
+        font-weight: bold;
+        color: white;
+        letter-spacing: 3px;
+        opacity: 0;
+        animation: fadeLoaderText 0.8s forwards;
+    }
+
+    @keyframes fadeLoaderText {
+        from { opacity: 0; transform: translateY(10px); }
+        to { opacity: 1; transform: translateY(0); }
+    }
+
+    .hero {
+        text-align: center;
+        padding: 70px 20px 50px;
+        background: rgba(255, 255, 255, 0.6);
+        border-bottom-left-radius: 40px;
+        border-bottom-right-radius: 40px;
+        box-shadow: 0 4px 25px rgba(0,0,0,0.15);
+        animation: fadeIn 1.3s ease;
+    }
+
+    .logo-area {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 12px;
+        margin-bottom: 15px;
+    }
+
+    .logo-area img {
+        width: 70px;
+        height: auto;
+        filter: drop-shadow(0 4px 8px rgba(0,0,0,0.25));
+    }
+
+    .logo-area span {
+        font-size: 32px;
+        font-weight: bold;
+        letter-spacing: 1px;
+        color: #004aad;
+        text-shadow: 0 2px 6px rgba(0,0,0,0.15);
+    }
+
+    .headline {
+        font-size: 22px;
+        font-weight: bold;
+        color: #004aad;
+        margin-top: 10px;
+        animation: slide-up 1s ease;
+    }
+
+    .subtext {
+        font-size: 15px;
+        margin-top: 8px;
+        color: #222;
+        opacity: 0.9;
+    }
+
+    .btn-store {
+        margin-top: 25px;
+        padding: 15px 28px;
+        background: linear-gradient(135deg, #0062ff, #2ea1ff);
+        color: white;
+        font-size: 18px;
+        border: none;
+        border-radius: 50px;
+        cursor: pointer;
+        box-shadow: 0 6px 18px rgba(0,0,0,0.2);
+        transition: 0.25s ease;
+        animation: glow 3s infinite ease-in-out;
+    }
+
+    .divider {
+        width: 70%;
+        height: 2px;
+        background: linear-gradient(to right, transparent, #4da3ff, transparent);
+        margin: 35px auto 25px;
+        border-radius: 50px;
+    }
+
+    .feature-box {
+        display: flex;
+        justify-content: center;
+        gap: 12px;
+        padding: 0 20px;
+        margin-bottom: 40px;
+        flex-wrap: wrap;
+    }
+
+    .feature {
+        background: white;
+        padding: 14px 18px;
+        border-radius: 16px;
+        font-size: 15px;
+        font-weight: bold;
+        box-shadow: 0 4px 14px rgba(0,0,0,0.12);
+        border: 1px solid #dbe7ff;
+        transition: 0.3s ease;
+        width: 150px;
+        text-align: center;
+        cursor: pointer;
+    }
+
+    .product-highlight {
+        text-align: center;
+        margin-top: 20px;
+    }
+
+    .product-highlight img {
+        width: 75%;
+        max-width: 320px;
+        border-radius: 18px;
+        box-shadow: 0px 6px 22px rgba(0,0,0,0.22);
+        animation: float 3s infinite ease-in-out;
+    }
+
+    .footer {
+        text-align: center;
+        padding: 18px;
+        background: rgba(255,255,255,0.85);
+        margin-top: 40px;
+        font-size: 14px;
+        color: #000;
+    }
+
+    @keyframes fadeIn {
+        from {opacity: 0; transform: translateY(-20px);}
+        to {opacity: 1; transform: translateY(0);}
+    }
+
+    @keyframes slide-up {
+        from {opacity: 0; transform: translateY(20px);}
+        to {opacity: 1; transform: translateY(0);}
+    }
+
+    @keyframes glow {
+        0%, 100% { box-shadow: 0 0 10px #59a8ff; }
+        50% { box-shadow: 0 0 20px #0077ff; }
+    }
+
+    @keyframes float {
+        0%, 100% { transform: translateY(0); }
+        50% { transform: translateY(-8px); }
+    }
+</style>
+</head>
+
+<body>
+
+<div id="loader">
+    <div id="loader-text"></div>
+</div>
+
+<script>
+const text = "FJ STORE";
+let idx = 0;
+function typeWriter() {
+    if (idx < text.length) {
+        document.getElementById("loader-text").innerText += text.charAt(idx);
+        idx++;
+        setTimeout(typeWriter, 130);
+    } else {
+        setTimeout(() => {
+            document.getElementById("loader").style.opacity = "0";
+            document.getElementById("loader").style.transition = "0.8s";
+            setTimeout(() => {
+                document.getElementById("loader").style.display = "none";
+            }, 800);
+        }, 350);
+    }
+}
+window.onload = typeWriter;
+</script>
+
+<div class="hero">
+    <div class="logo-area">
+        <img src="logofj" alt="Logo FJ" />
+        <span>FJ STORE</span>
+    </div>
+
+    <div class="headline">Belanja Lebih Mudah, Pengalaman Lebih Baik</div>
+    <div class="subtext">Pilihan produk terbaik dengan kualitas premium dan harga bersahabat.</div>
+
+    <button class="btn-store" onclick="window.location.href='toko.html'">
+        Masuk ke Toko
+    </button>
+</div>
+
+<div class="divider"></div>
+
+<div class="feature-box">
+    <div class="feature" data-link="toko.html?filter=new">Lihat Koleksi Baru</div>
+    <div class="feature" data-link="toko.html?filter=promo">Promo Minggu Ini</div>
+    <div class="feature" data-link="toko.html?filter=best">Best Seller</div>
+</div>
+
+<div class="product-highlight">
+    <img src="HoodieHoligans-Premium.jpg" alt="Produk Utama" />
+</div>
+
+<div class="footer">
+    © 2025 FJ STORE – Semua Hak Dilindungi
+</div>
+
+<!-- ===== TAMBAHAN SCRIPT (TANPA SENTUH KODE ASLI) ===== -->
+<script>
+document.querySelectorAll(".feature").forEach(btn=>{
+    btn.addEventListener("click",()=>{
+        const link = btn.getAttribute("data-link");
+        window.location.href = link;
+    });
+});
+</script>
+
+</body>
+</html>
