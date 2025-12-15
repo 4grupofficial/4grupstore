@@ -1,0 +1,65 @@
+[
+  {
+    "id": 1,
+    "name": "HOOLIGANS T-Shirft Tape Paisley Black",
+    "price": 125000,
+    "image": "img/HOOLIGANSTShirftTapePaisleyBlack.jpg",
+    "description": "Kaos premium dengan motif paisley, bahan halus dan nyaman dipakai."
+  },
+  {
+    "id": 2,
+    "name": "Hoodie Holigans - Premium",
+    "price": 235240,
+    "image": "img/HoodieHoligans-Premium.jpg",
+    "description": "Hoodie premium dengan bahan tebal, cocok untuk harian dan hangout."
+  },
+  {
+    "id": 3,
+    "name": "Polo Shirt Linea - White",
+    "price": 156000,
+    "image": "img/HOOLIGANSPoloShirtLinea-White.jpg",
+    "description": "Polo shirt warna putih, desain elegan, cocok untuk style rapi."
+  },
+  {
+    "id": 4,
+    "name": "Sweater Crewneck Bold Dinho Linea Black",
+    "price": 211200,
+    "image": "img/HOOLIGANSSweaterCrewneckBoldDinhoLineaBlack.jpg",
+    "description": "Model yang sama namun tersedia dalam variasi ukuran."
+  },
+  {
+    "id": 5,
+    "name": "Long Cargo Pants Jose Black",
+    "price": 168224,
+    "image": "img/LongCargoPantsJoseBlack.jpg",
+    "description": "Stok tersedia dalam variasi ukuran."
+  },
+  {
+    "id": 6,
+    "name": "Bag Gullit Black",
+    "price": 140324,
+    "image": "img/BagGullitBlack.jpg",
+    "description": "Style yang ramping dan minimalis pas untuk meringkas keperluan sekolah, ngampus atau traveling kamu."
+  },
+  {
+    "id": 7,
+    "name": "Sling Bag Basten - Black",
+    "price": 126525,
+    "image": "img/SlingBagBasten-Black.jpg",
+    "description": "Sling Bag ini menggunakan bahan 1000 D Polyester dengan satu kompartemen dan bisa bantu kebutuhan simple kamu."
+  },
+  {
+    "id": 8,
+    "name": "Bag Gullit Tape Paisley Black",
+    "price": 148400,
+    "image": "img/BagGullitTapePaisleyBlack.jpg",
+    "description": "Berbeda dengan yang sebelumnya. Dengan detail Tape bermotif paisley yang dijahit menggunakan pitterban. Masih bahan Condura Nylon yang awet dan kompartemen yang luas."
+  },
+  {
+    "id": 9,
+    "name": "Board short Academica Bold Paisley Black",
+    "price": 120900,
+    "image": "img/BoardshortAcademicaBoldPaisleyBlack.jpg",
+    "description": "Bahan tebal dan adem, nyaman dipakai. Desain keren dengan motif batik yang menarik. Warna hitam pekat yang sesuai dengan gambar. Stok tersedia dalam variasi ukuran."
+  }
+]
